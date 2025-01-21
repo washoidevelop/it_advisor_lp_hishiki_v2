@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ツキ１</title>
+    <meta name="description" content="ツキイチのAI業務変革で、毎月会社を進化させる" />
+    <meta name="author" content="Washoi" />
+    <meta property="og:title" content="ツキ１" />
+    <meta property="og:description" content="ツキイチのAI業務変革で、毎月会社を進化させる" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tsuki1.washoi.co.jp" />
+    <meta property="og:image" content="https://tsuki1.washoi.co.jp/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3MQ3XZ81T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D3MQ3XZ81T');
+    </script>
+
+    <!-- Event snippet for 集客・営業のAI活用法ダウンロード conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      console.log('Google広告コンバージョン関数が呼び出されました');
+      var callback = function () {
+        console.log('Google広告コンバージョンのコールバックが実行されました');
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'G-D3MQ3XZ81T/70UKCNbDpowaENq_ua8-',
+          'event_callback': callback
+      });
+      console.log('Google広告コンバージョンイベントを送信しました');
+      return false;
+    }
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "pxitufav8o");
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
