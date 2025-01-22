@@ -23,7 +23,7 @@ const ServiceIntro = () => {
             <img
               src="/images/present_banner.png"
               alt="Present banner"
-              className="max-w-[600px]"
+              className="max-w-[600px] w-full h-auto"
             />
           </div>
         </div>
