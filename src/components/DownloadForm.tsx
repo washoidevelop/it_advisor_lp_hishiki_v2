@@ -111,7 +111,7 @@ const DownloadForm = () => {
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 bg-white rounded-lg p-3 md:p-12">
             <div className="text-left">
               <h2 className="text-[28px] md:text-[32px] font-bold mb-4 text-primary">
-                集客・営業のAI活用法のダウンロード
+                ChatGPT×Excelの活用法ダウンロード
               </h2>
               <p className="mb-8">
                 以下のフォームをご送信いただくと、ダウンロードが開始されます。

@@ -9,7 +9,7 @@ const AIMediaSection = () => {
             </h2>
           </div>
           <p className="text-white text-sm sm:text-[15px]">
-            お客様の集客・営業の業務をいますぐ変革する生成AI活用法をダウンロードできます。<br />ツキ１から得られる効果を具体的にイメージしていただけます。
+            お客様の業務をいますぐ変革する生成AI活用法をダウンロードできます。<br />ツキ１から得られる効果を具体的にイメージしていただけます。
           </p>
           <div className="text-white">
             <h3 className="text-lg font-bold mb-3 underline underline-offset-8">こんな方におすすめです</h3>
