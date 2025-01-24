@@ -39,7 +39,7 @@ const ContactForm = () => {
     try {
       console.log(values);
 
-      // GASに送信するデータを準備
+      // GASに送信するデータを準備する
       const submitData = {
         companyName: values.company,
         contactName: values.name,
