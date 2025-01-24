@@ -10,7 +10,7 @@ const DownloadBanner = () => {
         <p className="font-bold text-md text-primary mb-2 text-center">ChatGPT×Excelの活用法をプレゼント</p>
         <Button
           size="lg"
-          className="bg-[#FF9900] text-white px-10 py-8 rounded-full text-3xl font-bold hover:bg-[#FF6600] hover:scale-120 transition-all duration-3000 animate-scale-bounce shadow-lg hover:shadow-xl"
+          className="bg-[#FF9900] text-white px-10 py-8 rounded-full text-2xl font-bold hover:bg-[#FF6600] hover:scale-120 transition-all duration-3000 animate-scale-bounce shadow-lg hover:shadow-xl"
           onClick={() => navigateWithUtm("/download")}
         >
           今すぐダウンロード

@@ -11,7 +11,7 @@ const ServiceIntro = () => {
             <p className="text-xl sm:text-3xl text-[#0E3A51] font-bold mb-6">ChatGPT×Excelの活用法をプレゼント</p>
             <button 
               onClick={() => navigateWithUtm("/download")}
-              className="bg-[#FF9900] text-white px-10 py-4 rounded-full text-3xl font-bold hover:bg-[#FF6600] hover:scale-120 transition-all duration-3000 animate-scale-bounce shadow-lg hover:shadow-xl"
+              className="bg-[#FF9900] text-white px-10 py-4 rounded-full text-2xl font-bold hover:bg-[#FF6600] hover:scale-120 transition-all duration-3000 animate-scale-bounce shadow-lg hover:shadow-xl"
             >
               今すぐダウンロード
             </button>

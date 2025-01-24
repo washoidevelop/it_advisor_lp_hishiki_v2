@@ -12,7 +12,7 @@ const Navbar = () => {
     }`}>
       <div className="max-w-screen-xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center">
-          <button onClick={() => navigateWithUtm("/")} className="text-black font-bold text-4xl" style={{ fontFamily: "'Zen Old Mincho', serif" }}>
+          <button onClick={() => navigateWithUtm("/")} className="text-black font-bold text-3xl" style={{ fontFamily: "'Zen Old Mincho', serif" }}>
             ツキ１
           </button>
         </div>
