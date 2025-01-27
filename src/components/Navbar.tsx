@@ -25,7 +25,7 @@ const Navbar = () => {
             className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-white font-medium px-6 h-[40px] rounded-full"
             onClick={() => navigateWithUtm("/download")}
           >
-            AI活用法をダウンロード
+            資料をダウンロード
           </Button>
         </div>
       </div>
