@@ -8,11 +8,10 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { Textarea } from "@/components/ui/textarea";
 import { useUtmNavigation } from "@/hooks/use-utm-navigation";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
-import presentBanner from "/images/present_banner.png";
+import downloadBanner from "/images/download_banner.png";
 import presentPdf from "/present.pdf";
 
 const formSchema = z.object({
@@ -20,7 +19,6 @@ const formSchema = z.object({
   company: z.string().min(1, "会社名を入力してください"),
   email: z.string().email("正しいメールアドレスを入力してください"),
   phone: z.string(),
-  message: z.string(),
   privacy: z.boolean().refine((val) => val === true, "プライバシーポリシーに同意する必要があります"),
 });
 
@@ -35,7 +33,6 @@ const DownloadForm = () => {
       company: "",
       email: "",
       phone: "",
-      message: "",
       privacy: false,
     },
   });
@@ -60,7 +57,7 @@ const DownloadForm = () => {
         contactName: values.name,
         email: values.email,
         phone: values.phone ? `'${values.phone}` : "", // 電話番号の前にアポストロフィーを追加
-        message: values.message,
+        message: "",
         service: utmSource === 'google' 
           ? "chatgpt_excel_download_google"
           : utmSource === 'x'
@@ -108,29 +105,17 @@ const DownloadForm = () => {
     <div className="py-[30px] md:py-[60px]">
       <div className="container mx-auto px-4 max-w-[1280px]">
         <div className="max-w-[800px] mx-auto">
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8 bg-white rounded-lg p-3 md:p-12">
-            <div className="text-left">
+          <div className="bg-white rounded-lg p-3 md:p-12">
+            <div className="text-center mt-6">
               <h2 className="text-[28px] md:text-[32px] font-bold mb-4 text-primary">
-                ChatGPT×Excelの活用法ダウンロード
               </h2>
-              <p className="mb-8">
-                以下のフォームをご送信いただくと、ダウンロードが開始されます。
-              </p>
-              <p>
-                または公式LINEからもダウンロード可能です。<br />
-                トークで「<span className='text-primary font-bold'>AI活用</span>」とご入力いただくと、ダウンロードできます。
-              </p>
-              <div className="mt-4">
-                <a href="https://lin.ee/fH8cez4"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" style={{ height: '40px', border: 0, width: 'auto' }} /></a>
+              <div className="mt-4 mb-8">
+                <img
+                  src={downloadBanner}
+                  alt="AI活用法のダウンロード"
+                  className="w-full max-w-[1000px] mx-auto"
+                />
               </div>
-              
-            </div>
-            <div className="w-full md:w-auto">
-              <img
-                src={presentBanner}
-                alt="AI活用法のダウンロード"
-                className="w-auto h-[100px] object-contain"
-              />
             </div>
           </div>
 
@@ -214,24 +199,6 @@ const DownloadForm = () => {
 
               <FormField
                 control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>お問い合わせ内容</FormLabel>
-                    <FormControl>
-                      <Textarea
-                        placeholder="その他ご要望などございましたらご記入ください。"
-                        className="min-h-[120px]"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
                 name="privacy"
                 render={({ field }) => (
                   <FormItem className="flex flex-row items-start space-x-3 space-y-0">
@@ -243,7 +210,7 @@ const DownloadForm = () => {
                     </FormControl>
                     <div className="space-y-1 leading-none">
                       <FormLabel>
-                        <button className="text-primary underline cursor-pointer" onClick={() => navigateWithUtm('/privacy')}>個人情報の取り扱い</button>に同意する
+                        個人情報の取り扱いに同意する
                       </FormLabel>
                       <FormMessage />
                     </div>
@@ -260,6 +227,18 @@ const DownloadForm = () => {
                 >
                   {isSubmitting ? "送信中..." : "ダウンロードする"}
                 </Button>
+                </div>
+
+                <div className="text-center mt-8">
+                  <p>
+                  <br />
+                    または公式LINEからもダウンロード可能です。<br />
+                    トークで「<span className='text-primary font-bold'>AI活用</span>」とご入力いただくと、ダウンロードできます。
+                  </p>
+                  <div className="mt-4 flex justify-center">
+                    <a href="https://lin.ee/fH8cez4"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" style={{ height: '40px', border: 0, width: 'auto' }} /></a>
+                  </div>
+                  <br />
                 </div>
               </form>
             </Form>

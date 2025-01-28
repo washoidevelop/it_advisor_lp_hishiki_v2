@@ -6,8 +6,8 @@ const DownloadBanner = () => {
 
   return (
     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 px-4">
-      <div>
-        <p className="font-bold text-md text-primary mb-2 text-center">ChatGPT×Excelの活用法をプレゼント</p>
+      <div className="text-center">
+        <p className="text-xl sm:text-3xl text-[#0E3A51] font-bold mb-6">ChatGPT×Excelの活用法をプレゼント</p>
         <Button
           size="lg"
           className="bg-[#FF9900] text-white px-10 py-8 rounded-full text-2xl font-bold hover:bg-[#FF6600] hover:scale-120 transition-all duration-3000 animate-scale-bounce shadow-lg hover:shadow-xl"

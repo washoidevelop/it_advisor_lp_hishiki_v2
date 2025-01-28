@@ -53,6 +53,9 @@ const Index = () => {
       </div>
       <SupportApproachSection />
       <SupportMembersSection />
+      <div className="mt-4 mb-16">
+        <DownloadBanner />
+      </div>
       <ContactSection />
       <Footer />
     </main>
