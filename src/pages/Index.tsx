@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AboutService from "@/components/AboutService";
-import ValueProposition from "@/components/ValueProposition";
 import ValueFeaturesNegative from "@/components/ValueFeaturesNegative";
 import ValueFeaturesPositive from "@/components/ValueFeaturesPositive";
 import AIMediaSection from "@/components/AIMediaSection";
@@ -38,13 +37,12 @@ const Index = () => {
       <Navbar />
       <Hero />
       <AboutService />
-      <ValueProposition />
       <AIMediaSection />
       <div className="mt-16">
         <DownloadBanner />
       </div>
       <ValueFeaturesNegative />
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-8">
         <ScrollGuide />
       </div>
       <ValueFeaturesPositive />

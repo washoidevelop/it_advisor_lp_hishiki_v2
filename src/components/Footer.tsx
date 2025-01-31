@@ -10,8 +10,8 @@ const Footer = () => {
         {/* Logo and Address */}
         <div className="mb-8 sm:mb-12">
           <div className="mb-6 sm:mb-8">
-            <h2 className="text-3xl sm:text-[40px] font-bold text-navy mb-2">ツキ１</h2>
-            <p className="text-navy">ツキ１のAI業務変革で、毎月会社を進化させる</p>
+            <h2 className="text-3xl sm:text-[40px] font-bold text-navy mb-2">Washoi</h2>
+            <p className="text-navy">WashoiのAI業務変革で、毎月会社を進化させる</p>
           </div>
           <div className="text-sm sm:text-[15px] space-y-1">
             <p>株式会社Washoi</p>

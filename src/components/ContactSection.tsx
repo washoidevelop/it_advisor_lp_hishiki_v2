@@ -10,9 +10,9 @@ const ContactSection = () => {
       {/* Left section - Document Request */}
       <div className="w-full md:w-1/2 bg-blue-media py-12 sm:py-16 px-4 sm:px-8">
         <div className="max-w-md mx-auto space-y-4 sm:space-y-6">
-          <h2 className="text-xl sm:text-2xl font-bold text-white text-center">AI活用法ダウンロード</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-white text-center">厳選資料集</h2>
           <p className="text-sm sm:text-[15px] font-normal text-white">
-          お客様の業務を今日から変革するAI活用法です。<br />ツキ１から得られる効果を具体的にイメージしていただけます。
+            今だけ無料の資料集をプレゼント。フォームを記入して手に入れてください。
           </p>
           <Button 
             variant="outline" 
@@ -34,7 +34,7 @@ const ContactSection = () => {
         <div className="max-w-md mx-auto space-y-4 sm:space-y-6">
           <h2 className="text-xl sm:text-2xl font-bold text-white text-center">ご相談・お問い合わせ</h2>
           <p className="text-sm sm:text-[15px] font-normal text-white">
-            ツキ１を通してお客様が得られる効果をもっと知りたい方はお気軽にお問い合わせください。
+            サービスについてもっと知りたい方はお気軽にお問い合わせください。
           </p>
           <Button 
             variant="outline" 

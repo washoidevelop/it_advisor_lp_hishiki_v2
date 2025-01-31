@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useUtmNavigation } from "@/hooks/use-utm-navigation";
 import { Checkbox } from "@/components/ui/checkbox";
+import { ScrollGuide } from "@/components/ScrollGuide";
 import { toast } from "sonner";
 import downloadBanner from "/images/download_banner.png";
 import presentPdf from "/present.pdf";
@@ -119,7 +120,11 @@ const DownloadForm = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg p-3 md:p-12 mt-4 md:mt-8">
+          <div className="bg-white flex justify-center my-0">
+            <ScrollGuide />
+          </div>
+
+          <div className="bg-white rounded-lg p-3 md:p-12">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                 <FormField

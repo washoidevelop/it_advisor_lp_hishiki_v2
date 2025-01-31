@@ -7,9 +7,6 @@ const SupportMembersSection = () => {
           <div className="w-full lg:w-1/3">
             <div className="space-y-4 sm:space-y-6">
               <h2 className="text-xl sm:text-2xl md:text-[24px] font-bold text-navy">支援メンバーのご紹介</h2>
-              <p className="text-sm sm:text-[15px] text-navy">
-                メンバーは生成AIを活用した業務変革の専門家で構成されています。<br />全員が複数の領域に専門性を持ち、お客様のことを深く理解できる最高のパートナーです。
-              </p>
             </div>
           </div>
 
