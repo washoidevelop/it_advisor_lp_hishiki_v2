@@ -238,7 +238,7 @@ const DownloadForm = () => {
                   <p>
                   <br />
                     または公式LINEからもダウンロード可能です。<br />
-                    トークで「<span className='text-primary font-bold'>AI活用</span>」とご入力いただくと、ダウンロードできます。
+                    トークで「<span className='text-primary font-bold'>GPT</span>」とご入力いただくと、ダウンロードできます。
                   </p>
                   <div className="mt-4 flex justify-center">
                     <a href="https://lin.ee/fH8cez4"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" style={{ height: '40px', border: 0, width: 'auto' }} /></a>
